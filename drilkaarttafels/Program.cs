@@ -30,23 +30,17 @@ namespace drilkaarttafels
     {
         static void Main(string[] args)
         {
-            byte tafels;
+            int tafels;
             int somtafels;
             Console.WriteLine("geef het getal waar u de tafels van wilt?: ");
-            tafels = byte.Parse(Console.ReadLine());
+            tafels = int.Parse(Console.ReadLine());
 
             Console.WriteLine($"de tafels van {tafels} zijn:");
-            Console.WriteLine(tafels * 1);
-            Console.WriteLine(tafels * 2);
-            Console.WriteLine(tafels * 3);
-            Console.WriteLine(tafels * 4);
-            Console.WriteLine(tafels * 5);
-            Console.WriteLine(tafels * 6);
-            Console.WriteLine(tafels * 7);
-            Console.WriteLine(tafels * 8);
-            Console.WriteLine(tafels * 9);
-            Console.WriteLine(tafels * 10);
-
+            for (int getmaal = 1; getmaal < 12; getmaal++)
+            {
+                Console.WriteLine($"{tafels}*{getmaal}=");
+                Console.WriteLine(somtafels = tafels * getmaal );
+            }
 
 
 
